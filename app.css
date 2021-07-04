@@ -1,0 +1,38 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Nav bar styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.navLinks{
+    margin-right: 5rem;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+/* Content */
+
+.inActive{
+    display: none;
+}
