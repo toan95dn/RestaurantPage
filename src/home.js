@@ -3,7 +3,7 @@ const loadHome = (() => {
 
     const homeContent = document.createElement('div');
     homeContent.classList.add('inActive');
-    homeContent.classList.add('Home');
+    homeContent.dataset.content = 'Home';
 
     const welcomeMessage = document.createElement('p');
     welcomeMessage.innerText = "Best burger in the country";

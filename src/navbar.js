@@ -11,15 +11,15 @@ const loadNavbar = (() => {
 
     const homeLink = document.createElement('li');
     homeLink.innerText = 'Home';
-    homeLink.dataset.pick = '.Home';
+    homeLink.dataset.pick = 'Home';
 
     const menuLink = document.createElement('li');
     menuLink.innerText = 'Menu';
-    menuLink.dataset.pick = '.Menu';
+    menuLink.dataset.pick = 'Menu';
 
     const contactLink = document.createElement('li');
     contactLink.innerText = 'Contact';
-    contactLink.dataset.pick = '.Contact';
+    contactLink.dataset.pick = 'Contact';
 
     //Add all to all links 
     allLinks.append(homeLink);

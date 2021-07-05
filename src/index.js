@@ -6,20 +6,23 @@ const allPages = document.querySelectorAll('[data-content]');
 
 
 console.log(allTabsInNavBar[0].dataset.pick);
-//console.log(allPages);
 
 allTabsInNavBar.forEach((tab) => { //When each tab got clicked
-    //Turn off every tab
-
-    //Turn off every page
-
-
-    //Highlight the chosen tab
-
-    //Show the chosen page
     tab.addEventListener('click', () => {
-        const targetPage = document.querySelector(tab.dataset.pick);
-        console.log(targetPage);
+        //Turn off every tab
+        allTabsInNavBar.forEach('click', () => {
+
+        })
+        //Turn off every page
+        allPages.forEach('click', () => {
+
+        })
+
+        //Highlight the chosen tab
+
+
+        //Show the chosen page
+        const targetPage = document.querySelector(`[data-content = ${tab.dataset.pick}]`);
         targetPage.classList.remove('inActive');
     })
 })
