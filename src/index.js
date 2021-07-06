@@ -27,4 +27,5 @@ const burgerButton = document.querySelector('#burgerButton');
 burgerButton.addEventListener('click', () => {
     const dropdownMenu = document.querySelector('.navLinks');
     dropdownMenu.classList.toggle('open');
+    burgerButton.classList.toggle('open');
 })
