@@ -21,3 +21,10 @@ allTabsInNavBar.forEach((tab) => { //When each tab got clicked
         targetPage.classList.remove('inActive');
     })
 })
+
+//Add burger button dropdown
+const burgerButton = document.querySelector('#burgerButton');
+burgerButton.addEventListener('click', () => {
+    const dropdownMenu = document.querySelector('.navLinks');
+    dropdownMenu.classList.toggle('open');
+})

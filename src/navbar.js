@@ -2,15 +2,20 @@ const loadNavbar = (() => {
     const navBar = document.createElement('nav');
 
     //Header of navBar
+    const headerContainer = document.createElement('div');
+    headerContainer.classList.add('header');
 
     const restaurantName = document.createElement('h1');
     restaurantName.innerText = 'DTP-Burger';
 
     //Burger Button 
     const burgerButton = document.createElement('div');
-    burgerButton.classList.add('material-icons');
-    burgerButton.innerText = 'menu';
+    burgerButton.id = 'burgerButton';
+    burgerButton.appendChild(document.createElement('div'));
+    burgerButton.appendChild(document.createElement('div'));
+    burgerButton.appendChild(document.createElement('div'));
 
+    headerContainer.append(restaurantName, burgerButton);
 
 
     // All links in navBar
@@ -35,7 +40,7 @@ const loadNavbar = (() => {
     allLinks.append(homeLink, menuLink, contactLink);
 
     //Add all to the navbar
-    navBar.append(restaurantName, allLinks);
+    navBar.append(headerContainer, allLinks);
 
     //Add navbar to container 
     const contentContainer = document.querySelector("#content");

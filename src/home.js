@@ -4,7 +4,6 @@ const loadHome = (() => {
     const homeContent = document.createElement('div');
     homeContent.dataset.content = 'Home';
 
-
     //Welcome message
     const welcomeMessage_1 = document.createElement('h2');
     welcomeMessage_1.innerText = 'Best burgers in the country';
