@@ -131,13 +131,13 @@ color: #ff3d00d9;
 }
 
 [data-content='Home'] h2{
-    color: #ff2616;
+    color: #ff1200;
     text-shadow: 2px 2px #ffbcbce8;
     margin: 4rem 0 0 3.5rem ;
 }
 
 [data-content='Home'] h3{
-    color: #ff5722;
+    color: #ff3d00;
     text-shadow: 2px 2px #ffbcbce8;
     margin-bottom: 2rem;
 }
@@ -232,7 +232,7 @@ color: #ff3d00d9;
     text-align: center;
     margin: 8rem 0 2rem 0;
     color: #ff5722;
-    text-decoration: underline;
+    border-bottom: 0.3rem solid #ff5722 ;
 }
 
 .contactBoard{
