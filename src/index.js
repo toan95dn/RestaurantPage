@@ -3,9 +3,7 @@ import loadHome from './home.js'
 import loadMenu from './menu.js'
 import loadContact from './contact.js';
 
-
-/////////////STYLE FIRST THEN ADD LATER
-
+//
 const allTabsInNavBar = document.querySelectorAll('[data-target]');
 const allPages = document.querySelectorAll('[data-content]');
 

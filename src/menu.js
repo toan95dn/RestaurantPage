@@ -5,8 +5,12 @@ const loadMenu = (() => {
     menuContent.dataset.content = 'Menu';
     menuContent.classList.add('inActive');
 
-    //Food container
+    //Header
+    const menuHeader = document.createElement('h1');
+    menuHeader.innerText = 'Menu';
+    menuHeader.classList.add('menuHeader');
 
+    //Food container
     const foodItemsContainer = document.createElement('div');
     foodItemsContainer.classList.add('foodItemsContainer');
 
@@ -42,14 +46,11 @@ const loadMenu = (() => {
         'Hamburger Patty,Tomato,American Cheese Slice, Bacon, Mayonnaise');
     // const menuContainer;
 
-    menuContent.append(foodItemsContainer);
+    menuContent.append(menuHeader, foodItemsContainer);
 
 
     //Add all to container
     contentContainer.append(menuContent);
-
-
-
 })()
 
 export { loadMenu }

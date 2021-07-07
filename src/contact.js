@@ -75,8 +75,6 @@ const loadContact = (() => {
     map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52990.84580852239!2d-118.36952511916171!3d33.89151163663563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9dc1cba0a9e1f8b!2sIn-N-Out%20Burger!5e0!3m2!1sen!2sus!4v1625628516868!5m2!1sen!2sus";
     map.id = 'map';
 
-
-
     //Add all content to the content container (Contact board hold contact info, form, and map)
     contactBoard.append(contactInfo, contactForm, map);
     contactContent.append(contactHeader, contactBoard);
