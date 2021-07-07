@@ -31,14 +31,16 @@ ul{
 /* Nav bar styles */
 
 nav{
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffdf7e;
+    background-color: rgb(255 152 0);
 }
 
 nav h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-left: 5rem;
 }
 
@@ -59,7 +61,7 @@ nav h1{
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #ffdf7e;
+    background-color: rgb(255 152 0);
     align-items: center;
 }
 /* Burger button */
@@ -80,13 +82,13 @@ nav h1{
 
 #burgerButton :first-child{
     transform-origin: left top;
-   transition: all 1s ease-out;
+   transition: all 0.5s ease-out;
 }
 
 
 #burgerButton :last-child{
     transform-origin: left bottom;
-    transition: all 1s ease-out;}
+    transition: all 0.5s ease-out;}
 
 #burgerButton.open :first-child{
     transform: rotate(45deg);
@@ -101,7 +103,7 @@ nav h1{
 }
 
 
-/* Homepage content */
+/* ------------------------------------------Homepage content------------------------------------------ */
 [data-content='Home']{
     flex:1;
     height: 100%;
@@ -162,6 +164,66 @@ nav h1{
 #orderButton:hover{
     background-color: #ff5722;
 }
+
+/* ------------------------------------------Menu content------------------------------------------ */
+[data-content='Menu']{
+    background-color: rgb(245, 235, 220);
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.menuHeader{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.itemContainer{
+    background-color:#ffdf7e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 1rem;
+    border: 0.5rem solid black;
+    color: #1976d2;
+    font-size: 1.75rem;
+}
+
+.itemContainer h2{
+    color:#ff5722;
+    text-decoration: underline;
+}
+
+.foodItemsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+
+/*------------------------------------------ Contact Content------------------------------------------  */
+[data-content='Contact']{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHeader{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+
 /* Content */
 
 .inActive  {
@@ -170,7 +232,7 @@ nav h1{
 
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     html{
         font-size: 40%;
     }
@@ -213,5 +275,20 @@ nav h1{
         display:flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    /* Menu */
+    .foodItemsContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .itemContainer{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+    .foodItemsContainer{
+        grid-template-columns: 1fr 1fr;
     }
 }

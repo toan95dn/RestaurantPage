@@ -1,5 +1,7 @@
 import loadNavbar from './navbar.js'
 import loadHome from './home.js'
+import loadMenu from './menu.js'
+import loadContact from './contact.js';
 
 
 /////////////STYLE FIRST THEN ADD LATER
@@ -12,7 +14,9 @@ allTabsInNavBar.forEach((tab) => { //When each tab got clicked
         //Turn off every tab
 
         //Turn off every page
-
+        allPages.forEach((page) => {
+            page.classList.add('inActive');
+        })
 
         //Highlight the chosen tab
 
