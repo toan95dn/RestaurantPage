@@ -6,7 +6,7 @@ const loadNavbar = (() => {
     headerContainer.classList.add('header');
 
     const restaurantName = document.createElement('h1');
-    restaurantName.innerText = '🍔 The Odin Burger';
+    restaurantName.innerText = '🍔 The-Odin-Burger';
 
     //Burger Button 
     const burgerButton = document.createElement('div');
