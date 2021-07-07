@@ -49,13 +49,14 @@ const loadContact = (() => {
     //-----------------------------------------------Contact form---------------------------------------------------//
     const contactForm = document.createElement('form');
     contactForm.classList.add('contactForm');
+    contactForm.action = '#';
 
     const inviteMessage = document.createElement('p');
     inviteMessage.innerText = '📧 Message us now!';
 
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
-    nameInput.placeholder = 'Fullname';
+    nameInput.placeholder = 'Full name';
     const mailInput = document.createElement('input');
     mailInput.type = 'email';
     mailInput.placeholder = 'Email';
