@@ -56,6 +56,7 @@ color: #ff3d00d9;
 
 .navLinks li:hover{
     color:red;
+    cursor: pointer;
 }
 
 .header{ 
@@ -181,6 +182,7 @@ color: #ff3d00d9;
 
 #orderButton:hover{
     background-color: #ff5622d8;
+    cursor: pointer;
 }
 
 /* ------------------------------------------Menu content------------------------------------------ */
@@ -359,7 +361,7 @@ input:focus{
     .navLinks{
         display: none;
     }
-
+    
     .navLinks.open{
         display: flex;
         background-color: rgba(0,0,0,0.6);
