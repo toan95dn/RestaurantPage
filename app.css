@@ -1,7 +1,6 @@
 html{
     font-size: 62.5%;
-    font-family: 'Otomanopee One', sans-serif;
-}
+    font-family: 'STIX Two Math', serif;}
 
 *{
     padding: 0;
@@ -42,6 +41,7 @@ nav{
 nav h1{
     font-size: 3.5rem;
     margin-left: 5rem;
+color: #ff3d00d9;
 }
 
 .navLinks{
@@ -63,6 +63,18 @@ nav h1{
     flex-direction: row;
     background-color: rgb(255 152 0);
     align-items: center;
+}
+
+[data-target = 'Home'].picked{
+    color:#ff3d00;
+}
+
+[data-target = 'Menu'].picked{
+    color:#ff3d00;
+}
+
+[data-target = 'Contact'].picked{
+    color:#ff3d00;
 }
 /* Burger button */
 #burgerButton{
@@ -125,7 +137,7 @@ nav h1{
 }
 
 [data-content='Home'] h3{
-    color: #fc0056;
+    color: #ff5722;
     text-shadow: 2px 2px #ffbcbce8;
     margin-bottom: 2rem;
 }
@@ -155,9 +167,9 @@ nav h1{
     border:none;
     border-radius: 4rem;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight:normal;
     background-color: #ff5722c4;
-    color:#fff8bb;
+    color:white;
     transition: 0.25s;
 }
 
@@ -218,7 +230,7 @@ nav h1{
 .contactHeader{
     font-size: 3rem;
     text-align: center;
-    margin-top: 8rem;
+    margin: 8rem 0 2rem 0;
     color: #ff5722;
     text-decoration: underline;
 }
@@ -236,6 +248,7 @@ nav h1{
 }
 
 .contactInfo{
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,15 +268,14 @@ nav h1{
 }
 
 input{
-    display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     font-size: 2rem;
     width: 90%;
     margin: 1rem;
     outline: none;
     border:none;
     background-color: #ffdf7e;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dotted black;
 }
 
 input:focus{
@@ -272,7 +284,7 @@ input:focus{
 
 
 .contactForm{
-    font-size:2rem;
+    font-size:2.5rem;
     text-align: center;
     padding: 2rem;
     color:#ff5722;
@@ -283,7 +295,7 @@ input:focus{
     height: 4rem;
     margin: 1rem;
     border-radius: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     font-size: medium;
     color:white;
     background-color: #ff9800;
@@ -322,7 +334,7 @@ input:focus{
         align-items: center;
         position: fixed;
         width: 100vw;
-        background-color: rgba(0,0,0,0.25);
+        background-color: rgba(255,152,0,0.5);
     }
 
     nav h1{
