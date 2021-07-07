@@ -21,23 +21,21 @@ const loadHome = (() => {
     infoPannel.classList.add('infoPanel');
 
     const infoAddress = document.createElement('p');
-    const addressIcon = document.createElement('span');
+    const addressIcon = document.createElement('div');
     addressIcon.classList.add('material-icons');
     addressIcon.innerText = 'place';
 
-    infoAddress.append(addressIcon);
     infoAddress.append('2048 Florwood Avenue', document.createElement('br'), 'Los Angeles, 90260');
 
 
     const infoTime = document.createElement('p');
-    const watchIcon = document.createElement('span');
+    const watchIcon = document.createElement('div');
     watchIcon.classList.add('material-icons');
     watchIcon.innerText = 'schedule';
 
-    infoTime.append(watchIcon);
-    infoTime.append('Mon-Fri: 10:00am-10:00pm', document.createElement('br'), '**Sat-Sun: 10:00am-05:00pm');
+    infoTime.append('Mon-Fri: 10:00am-10:00pm', document.createElement('br'), 'Sat-Sun: 10:00am-05:00pm');
 
-    infoPannel.append(infoAddress, infoTime);
+    infoPannel.append(addressIcon, infoAddress, watchIcon, infoTime);
 
 
     //Add to the homepage container
