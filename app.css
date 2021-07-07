@@ -317,6 +317,10 @@ input:focus{
     border:none;
 }
 
+#submitFormButton:hover{
+    cursor: pointer;
+}
+
 #map{
     width: 95%;
     height: 95%;
