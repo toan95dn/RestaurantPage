@@ -28,6 +28,7 @@ allTabsInNavBar.forEach((tab) => { //When each tab got clicked
         //Show the chosen page
         tab.classList.add('picked');
         targetPage.classList.remove('inActive');
+        closeDropDownMenu();
     })
 })
 
@@ -38,6 +39,19 @@ burgerButton.addEventListener('click', () => {
     dropdownMenu.classList.toggle('open');
     burgerButton.classList.toggle('open');
 })
+
+//Drop down dissapear when click at the content
+allPages.forEach((page) => {
+    page.addEventListener('click', () => {
+        closeDropDownMenu();
+    })
+})
+
+function closeDropDownMenu() {
+    burgerButton.classList.remove('open');
+    const dropdownMenu = document.querySelector('.navLinks');
+    dropdownMenu.classList.remove('open');
+}
 
 // Send message button
 const submit_FormButton = document.querySelector('#submitFormButton');
