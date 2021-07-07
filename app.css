@@ -121,7 +121,7 @@ color: #ff3d00d9;
     flex:1;
     height: 100%;
     font-size: 4rem;
-    background: url('/dist/images/bbq.jpg');
+    background: url('./images/bbq.jpg');
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
